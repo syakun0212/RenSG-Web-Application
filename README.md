@@ -1,4 +1,4 @@
-# CZ2006
+# CZ3002
 
 ## Setting up the development environment
 
