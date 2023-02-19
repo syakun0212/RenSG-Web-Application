@@ -1,0 +1,44 @@
+version: "3"
+
+services:
+    api:
+        build: api
+        command: ["flask", "run", "--host=0.0.0.0"]
+        image: marcusfooo/cz2006-backend:latest
+        volumes:
+            - ./api:/api
+        env_file:
+            - .env
+        ports:
+            - "5000:5000"
+
+    client:
+        build: 
+            context: ./client
+        image: marcusfooo/cz2006-frontend:latest
+        volumes:
+            - client_build:/frontend/build
+        env_file:
+            - .env
+        ports:
+            - "3000:3000"
+        depends_on:
+            - api
+        tty: true
+
+    nginx:
+        image: nginx:latest
+        restart: always
+        depends_on:
+            - api
+            - client
+        volumes:
+            - ./nginx/nginx-setup.conf:/etc/nginx/conf.d/default.conf:ro
+            - client_build:/var/www/frontend
+        ports:
+            - "80:80"
+
+
+
+volumes:
+    client_build:

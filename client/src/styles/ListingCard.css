@@ -1,0 +1,10 @@
+.thumbnail {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.image-col {
+  /* height: 100%; */
+}

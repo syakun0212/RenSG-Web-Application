@@ -1,0 +1,45 @@
+.mytabs {
+  color: black;
+}
+.mytabs.active {
+  color: var(--accentdark) !important;
+  font-weight: 600;
+}
+
+.profile-container {
+  flex: 1 1 auto;
+  overflow-y: hidden;
+}
+
+.profile-container > .row {
+  height: 100%;
+}
+
+.tab-content {
+  height: 100%;
+  overflow-y: scroll;
+  margin-top: 1em;
+}
+
+.tab-content::-webkit-scrollbar {
+  width: 0.25em;
+}
+
+.tab-content::-webkit-scrollbar-track {
+  background-color: hsl(204 8% 76%);
+  margin-block: 0.5em;
+  border-radius: 100vw;
+}
+
+.tab-content::-webkit-scrollbar-thumb {
+  background-color: hsl(204 8% 56%);
+  margin-block: 0.5em;
+  border-radius: 100vw;
+}
+
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}

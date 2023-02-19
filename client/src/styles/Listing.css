@@ -1,0 +1,43 @@
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+  gap: 1em;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.photo-card:nth-child(1) {
+  grid-row: span 2 / auto;
+  grid-column: span 2 / auto;
+}
+
+.bid-box {
+  overflow: hidden;
+  max-height: 250px;
+}
+
+.bid-list {
+  overflow-y: scroll;
+}
+
+.bid-list::-webkit-scrollbar {
+  width: 0.25em;
+}
+
+.bid-list::-webkit-scrollbar-track {
+  background-color: hsl(204 8% 76%);
+  margin-block: 0.5em;
+  border-radius: 100vw;
+}
+
+.bid-list::-webkit-scrollbar-thumb {
+  background-color: hsl(204 8% 56%);
+  margin-block: 0.5em;
+  border-radius: 100vw;
+}

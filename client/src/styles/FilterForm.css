@@ -1,0 +1,33 @@
+.form-container {
+  background-color: var(--bg);
+  border-radius: 10vw;
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 960px;
+}
+
+.form-container .form-control {
+  background-color: var(--bg);
+  border: none;
+}
+
+.form-container .form-control:focus {
+  box-shadow: none;
+}
+
+.form-container .field {
+  display: flex;
+  align-items: center;
+}
+
+.form-container .field:nth-child(-n + 2) {
+  border-right: 1px solid lightgrey;
+}
+
+.search-button {
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  margin-right: 1em;
+  border-radius: 50%;
+}

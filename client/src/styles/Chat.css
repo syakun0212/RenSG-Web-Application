@@ -1,0 +1,85 @@
+.chat-box {
+  flex: 1 1 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ce-chat-engine,
+.ce-wrapper {
+  height: 100%;
+}
+
+.ce-chat-feed-column {
+  height: 100% !important;
+  width: 75% !important;
+  max-width: 75% !important;
+  flex: 0 0 75% !important;
+  background-color: var(--bg);
+}
+
+.ce-chat-list {
+  background-color: var(--bg) !important;
+  font-family: inherit !important;
+}
+
+.ce-chats-container {
+  background-color: var(--bg) !important;
+}
+
+.ce-active-chat-card {
+  background-color: var(--accentlight) !important;
+  border-radius: 0px !important;
+}
+
+.ce-chat-subtitle-text {
+  color: #595959 !important;
+}
+
+/* .ce-chat-form-container {
+  padding-bottom: 20px !important;
+} */
+
+.ce-chat-feed-container {
+  max-height: 100% !important;
+}
+
+.ce-text-input {
+  border-radius: 6px !important;
+  border: 1px solid #3b2a50 !important;
+}
+
+.ce-primary-button {
+  border-radius: 6px !important;
+  background-color: var(--accent) !important;
+  position: relative;
+  bottom: 1px;
+}
+
+.ce-danger-button {
+  background-color: white !important;
+  border-radius: 22px !important;
+}
+
+.ce-settings-column {
+  display: none !important;
+  width: 0px !important;
+}
+
+.ce-autocomplete-input {
+  border-radius: 6px !important;
+  border: 1px solid #3b2a50 !important;
+}
+
+.ce-autocomplete-options {
+  border-radius: 6px !important;
+  border: 1px solid #3b2a50 !important;
+  background-color: white !important;
+}
+
+.ce-chat-avatars-row {
+  display: none !important;
+}
+
+.ql-container {
+  font-family: inherit !important;
+}
